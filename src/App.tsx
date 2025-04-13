@@ -1,12 +1,11 @@
-// import "./App.css";
+import Welcome from "./components/welcome";
 
+// import "./App.css";
 function App() {
   return (
-    <>
-      <div>
-        <h2 className="text-red-500"> sghg,sfgldfg</h2>
-      </div>
-    </>
+    <div className="bg-[var(--color-G1-background)] min-h-screen w-full overflow-x-hidden">
+      <Welcome />
+    </div>
   );
 }
 
