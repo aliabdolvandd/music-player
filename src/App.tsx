@@ -1,11 +1,14 @@
-import Welcome from "./components/welcome";
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./router/animated";
 
 // import "./App.css";
 function App() {
   return (
-    <div className="bg-[var(--color-G1-background)] min-h-screen w-full overflow-x-hidden">
-      <Welcome />
-    </div>
+    <BrowserRouter>
+      <div className="bg-[var(--color-G1-background)] min-h-screen w-full overflow-x-hidden">
+        <AnimatedRoutes />
+      </div>
+    </BrowserRouter>
   );
 }
 

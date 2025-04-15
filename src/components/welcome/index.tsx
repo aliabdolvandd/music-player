@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 function Welcome() {
@@ -15,10 +16,12 @@ function Welcome() {
             </span>
           </div>
         </div>
-        <div className="">
-          <Button variant="outline" size="xl">
-            <span className="font-bold text-white ">Get Start</span>
-          </Button>
+        <div>
+          <Link to={"/home"}>
+            <Button variant="outline" size="xl">
+              <span className="font-bold text-white ">Get Start</span>
+            </Button>
+          </Link>
         </div>
         <div className="  w-[350px] h-[350px] bg-[var(--color-primary)] absolute bottom-15 rounded-full blur-3xl z-0 opacity-20 animate-[rotate-right_30s_linear_infinite]"></div>
       </div>
